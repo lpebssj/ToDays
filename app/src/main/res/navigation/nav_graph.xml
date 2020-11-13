@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.todays.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_userProfile2"
+            app:destination="@id/userProfile" />
+        <action
+            android:id="@+id/action_home_to_addEvent2"
+            app:destination="@id/addEvent" />
+        <action
+            android:id="@+id/action_home_to_TIHFragment"
+            app:destination="@id/TIHFragment" />
+        <action
+            android:id="@+id/action_home_to_composeFragment"
+            app:destination="@id/composeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.example.todays.Fragment.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" >
+        <action
+            android:id="@+id/action_userProfile2_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_userProfile_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_userProfile_to_TIHFragment"
+            app:destination="@id/TIHFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEvent"
+        android:name="com.example.todays.Fragment.AddEventFragment"
+        android:label="fragment_add_event"
+        tools:layout="@layout/fragment_add_event" >
+        <action
+            android:id="@+id/action_addEvent2_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.todays.Fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.todays.Fragment.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TIHFragment"
+        android:name="com.example.todays.Fragment.TIHFragment"
+        android:label="t_i_h_fragment"
+        tools:layout="@layout/t_i_h_fragment" >
+        <action
+            android:id="@+id/action_TIHFragment_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_TIHFragment_to_userProfile"
+            app:destination="@id/userProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/composeFragment"
+        android:name="com.example.todays.Fragment.ComposeFragment"
+        android:label="fragment_compose"
+        tools:layout="@layout/fragment_compose" >
+        <action
+            android:id="@+id/action_composeFragment_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_composeFragment_to_addEvent"
+            app:destination="@id/addEvent" />
+    </fragment>
+</navigation>

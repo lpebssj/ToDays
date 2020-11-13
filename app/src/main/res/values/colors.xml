@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="dark">#777777</color>
+    <color name="light">#C3C3C3</color>
+    <color name="clear">#00FFFFFF</color>
+    <color name="green">#355E37</color>
+    <color name="red">#662520</color>
+    <color name="dark_overlay">#8D111111</color>
+    <color name="ten_percent_clear">#1AFFFFFF</color>
+    <color name="xdark">#2c2c2c</color>
+</resources>
